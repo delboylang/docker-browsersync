@@ -18,4 +18,7 @@ RUN a2enmod rewrite
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/bin/composer 
 RUN npm install -g browser-sync
+RUN npm install -g gulp
+
+ 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
